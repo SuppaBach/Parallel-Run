@@ -40,7 +40,7 @@ void loop() {
      
     //For category A => Ignore on main conveyor
     if(bottle_type == 'A'){
-      digitalWrite(Digital_out_1, HIGH); //for testing logic only
+      digitalWrite(Digital_out_1, LOW); //for testing logic only
       //delay(500);
       //digitalWrite(Digital_out_1, LOW); //
       //delay(500);
@@ -51,7 +51,7 @@ void loop() {
     //For testing only, in real system, we will separate condition for B and C
     //For category B and C => reject from main conveyor with pusher to another conveyor
     if(bottle_type == 'B' || bottle_type == 'C'){ //Reject bottle!!!
-      digitalWrite(Digital_out_1, LOW); //for testing logic only
+      digitalWrite(Digital_out_1, HIGH); //for testing logic only
       //Serial.print("Reject!!!\n"); //for testing only
       //delay(1000); //for testing only
       //delay(30000); //for testing logic with voltmeter only
